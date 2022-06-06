@@ -1,0 +1,24 @@
+{
+  "name": "cordova-plugin-link-checker",
+  "version": "0.1.0",
+  "description": "Determines whether installed applications can process the given URL.",
+  "cordova": {
+    "id": "cordova-plugin-link-checker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      ">=3.0.0": {
+        "cordova-android": ">=8.0.0"
+      }
+    }
+  },
+  "author": "Alexander Kuzin",
+  "license": "MIT"
+}

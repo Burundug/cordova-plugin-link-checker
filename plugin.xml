@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-link-checker" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-link-checker</name>
+    <js-module name="appChecker" src="www/cordova-plugin-link-checker.js">
+        <clobbers target="window.cordovaLinkChecker"/>
+    </js-module>
+    <engines>
+        <engine name="cordova" version="&gt;=8.0.0"/>
+        <engine name="cordova-android" version="&gt;=8.0.0"/>
+    </engines>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="appChecker">
+                <param name="android-package" value="cordova.plugin.link.checker.appChecker"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"/>
+        <source-file src="src/android/appChecker.java" target-dir="src/cordova/plugin/link/checker/appChecker"/>
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="cordova-plugin-link-checker">
+                <param name="ios-package" value="cordova-plugin-link-checker"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/cordova-plugin-link-checker.m"/>
+    </platform>
+</plugin>

@@ -22,7 +22,7 @@
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="cordova-plugin-link-checker">
-                <param name="ios-package" value="cordova-plugin-link-checker"/>
+                <param name="ios-package" value="appChecker"/>
             </feature>
         </config-file>
         <source-file src="src/ios/cordova-plugin-link-checker.m"/>

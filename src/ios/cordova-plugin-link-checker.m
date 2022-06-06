@@ -2,14 +2,14 @@
 
 #import <Cordova/CDV.h>
 
-@interface cordova-plugin-link-checker : CDVPlugin {
+@interface appChecker : CDVPlugin {
   // Member variables go here.
 }
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command;
 @end
 
-@implementation cordova-plugin-link-checker
+@implementation appChecker
 
 - (void)coolMethod:(CDVInvokedUrlCommand*)command
 {
